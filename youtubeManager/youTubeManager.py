@@ -1,7 +1,11 @@
 import json
-
+import trace
+import sys
 # Here try:except: finally method is used to handle the error while opening the file. 
 # json.load() is used to load the data from py file to json file format. 
+
+tracer = trace.Trace( ignoredirs=[sys.prefix, sys.exec_prefix],trace=0, count=1)
+
 
 
 def load_data():
@@ -83,5 +87,8 @@ def main():
                 print('Invalid Choice')
             
 if __name__ == "__main__":
+    # tracer.run('main()')
+    # r = tracer.results()
+    # r.write_results(show_missing=True, coverdir=".")
     main()
 
