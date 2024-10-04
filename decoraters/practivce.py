@@ -1,9 +1,13 @@
-from functools import lru_cache
 
-@lru_cache(maxsize=None)
-def fibonacci(n):
-    if n < 2:
-        return n
-    return fibonacci(n-1) + fibonacci(n-2)
+def decorated_account(func):
+    def wrapper(*args, **kwargs):
+        pass
 
-print(fibonacci(11))  # Efficiently cached due to hash of arguments
+
+
+@decorated_account
+def account(self, account_number, name, contact):
+    self.account_number = account_number
+    self.name = name
+    self.contact = contact
+    print("")

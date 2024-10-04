@@ -1,84 +1,12 @@
-import pandas as pd
-
-df = pd.read_csv('data.csv')
-
-df.loc[7,'Duration'] = 45
-
-for x in df.index:
-	if df.duration>30 and df.duration<60:
-		print(df.duration)
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import pandas as pd 
+  
+# Calling DataFrame constructor 
+df = pd.DataFrame() 
+print(df)
+
+# list of strings 
+lst = [ 'Geeks For Geeks is portal for Geeks'] 
+  
+# Calling DataFrame constructor on list 
+df = pd.DataFrame(lst) 
+print(df)
