@@ -1,0 +1,10 @@
+from threading import *
+
+def show():
+    print("This is a child Tread")
+
+
+t = Thread(target= show())
+t.start()
+
+print("This is the default or parent thread")
