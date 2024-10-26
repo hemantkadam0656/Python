@@ -1,1 +1,1 @@
-#Python Practice Reposatory 
+#Python Practice Repository 
